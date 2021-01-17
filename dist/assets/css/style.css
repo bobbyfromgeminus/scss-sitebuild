@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* font-family: 'Catamaran', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mulish', sans-serif; */
+}
+
+body {
+    
+    background-image: url('../../../src/files/design/desktop_o.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    min-height: 400vh;
+}
+
+.col__60 {
+    width: 59.5%;
+    margin: auto;
+}
+
+.col__50 {
+    width: 50%;
+    margin: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.h-100 {
+    height: 100%;
+    display: block;
+}
+
+.mt-5 {
+    margin-top: 4rem;
+}
+
+.mx {
+    margin: 0 1rem;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+p {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+
+
+/* NAV */
+
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .nav .nav__header {
+        color: #fdcc52;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: .09rem;
+    }
+
+    .nav .nav__header:hover {
+        color: #ffffff;
+    }
+
+    .nav .nav__container {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .nav .nav__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: .75rem;
+        font-weight: 300;
+        margin-left: 1rem;
+        letter-spacing: .15rem;
+        opacity: .8;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+    }
+
+    .nav .nav__link:hover {
+        opacity: 1;
+    }
+
+    .nav__scrolled {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        font-family: 'Catamaran', sans-serif;
+        background-color: #ffffff;
+    }
+
+    .nav__scrolled .nav__header {
+        color: #3c3c3c;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: .09rem;
+    }
+
+    .nav__scrolled .nav__header:hover {
+        color: #3c3c3c;
+    }
+
+    .nav__scrolled .nav__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #3c3c3c;
+        font-size: .75rem;
+        font-weight: 300;
+        margin-left: 1rem;
+        letter-spacing: .15rem;
+        opacity: .8;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+    }
+
+    .nav__scrolled .nav__link:hover {
+        opacity: 1;
+    }
+
+/* SECTION #1 */
+
+    .gradient-bg {
+        background: rgb(219,36,49);
+        background-image: url('../images/bg-pattern.png');
+        background-image: url('../images/bg-pattern.png'), linear-gradient(90deg, rgba(219,36,49,1) 0%, rgba(123,67,151,1) 100%);
+        background-repeat: repeat;
+        display: flex;
+        align-items: center;
+    }
+
+    .container__one {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    .container__one .text__container {
+        min-height: 50%;
+        width: 65%;
+        padding: 0 1rem 0 4rem;
+    }
+
+    .container__one .text__header {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        color: #ffffff;
+    }
+
+    .container__one .text__container button {
+        font-size: .75rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        color: #ffffff;
+        background-color: #fdcc5200;
+        padding: 1rem 3rem;
+        margin: 3rem 0 0 0;
+        border: 2px solid #ffffff;
+        border-radius: 2rem;
+        transition: background-color .3s;
+    }
+
+    .container__one .text__container button:hover {
+        color: #3c3c3c;
+        background-color: #fdcc52;
+        border: 2px solid #fdcc52;
+        cursor: pointer;
+    }
+
+    .container__one .image__container {
+        min-height: 50%;
+        width: 35%;
+    }
+
+    .container__one .mobile__img {
+        display: block;
+        width: 100%;
+        padding-bottom: 200%;
+        background-image: url("../images/demo-screen-1.jpg"), url("../images/phone.png");
+        background-size: 90%, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center ;
+        float: right;
+    }
+
+
+/* SECTION #2 */
+
+    .yellow__background {
+        background-color: #fdcc52;
+    }
+
+    .container__two {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 58vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__two .text__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container__two .text__header {
+        font-size: 4.5rem;
+        line-height: 5rem;
+        color: #212529;
+        text-align: center;
+    }
+
+    .container__two p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+
+/* SECTION #3 */
+
+    .container__three {
+        display: block;
+        min-height: 110vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__three .text__head {
+        width: 100%;
+        padding: 6rem 0;
+    }
+
+    .container__three .text__header {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        color: #212529;
+        text-align: center;
+    }
+
+    .text__head p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .container__three p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .container__three .text__container {
+        min-height: 50%;
+        width: 65%;
+        padding: 0 1rem 0 4rem;
+    }
+
+    .container__three .text__header {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        color: #212529;
+    }
+
+    .container__three .image__container {
+        min-height: 50%;
+        width: 35%;
+    }
+
+    .container__three .mobile__img {
+        display: block;
+        width: 100%;
+        padding-bottom: 200%;
+        background-image: url("../images/demo-screen-1.jpg"), url("../images/phone.png");
+        background-size: 90%, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center ;
+        float: right;
+    }
+
+
+
+/* SECTION #4 */
+
+    .container__four {
+        display: block;
+        min-height: 70vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background-color: #000000;
+    }
+
+    .container__four .image__container {
+        position: absolute;
+        width: 100%;
+        padding-top: 100%;
+        opacity: 0.5;
+        background-image: url('../images/bg-cta.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .container__four .text__container {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container__four .text__header {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        color: #ffffff;
+        font-weight: 200;
+    }
+
+    .container__four .text__container button {
+        font-size: .75rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        color: #ffffff;
+        background-color: #fdcc5200;
+        padding: 1rem 3rem;
+        margin: 3rem 0 0 0;
+        border: 2px solid #ffffff;
+        border-radius: 2rem;
+        transition: background-color .3s;
+    }
+
+    .container__four .text__container button:hover {
+        color: #3c3c3c;
+        background-color: #fdcc52;
+        border: 2px solid #fdcc52;
+        cursor: pointer;
+    }

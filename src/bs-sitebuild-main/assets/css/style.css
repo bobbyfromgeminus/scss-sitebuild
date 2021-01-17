@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif !important;
+}
+
+.min-height-100 {
+    min-height: 100vh;
+}
+
+.min-height-80 {
+    min-height: 80vh;
+}
+
+.min-height-70 {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+    .min-height-70 {
+        min-height: 70vh;
+    }
+}
+
+.gradient-bg {
+    background: rgb(219,36,49);
+    background-image: url('../images/bg-pattern.png');
+    background-image: url('../images/bg-pattern.png'), linear-gradient(90deg, rgba(219,36,49,1) 0%, rgba(123,67,151,1) 100%);
+    background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif !important;
+}
+
+.nav-link {
+    font-family: 'Lato', Helvetica, Arial, sans-serif !important;
+}
+
+
+.navbar-light {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.brand-top {
+    font-size: 1.5rem;
+    color: #fdc63e;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.brand-top:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.bg-light .brand-top {
+    color: #fdc63e;
+}
+
+.navbar-toggler {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 1) !important
+}
+
+.small {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+
+    .small {
+        font-size: .8rem;
+    }
+
+    .navbar-light {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .brand-top {
+        font-size: 1.3rem;
+        color: #fdc63e;
+    }
+    
+    .brand-top:hover {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 100;
+    }
+    
+    .bg-light .brand-top {
+        color: rgb(60, 60, 60, 1) !important;
+    }
+}
+
+
+.menu-color {
+    color: rgb(60, 60, 60, .8) !important;
+    letter-spacing: .1rem;
+}
+
+.menu-color:hover {
+    color: rgb(60, 60, 60, 1) !important;
+}
+
+.bg-light .menu-color {
+    color: rgb(60, 60, 60, .8) !important;
+    letter-spacing: .1rem;
+}
+
+.bg-light .menu-color:hover {
+    color: rgb(60, 60, 60, 1) !important;
+}
+
+.active {
+    color: #fdc63e !important;
+    font-weight: 400;
+}
+
+.bg-light .active {
+    color: #fdc63e !important;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+
+    .menu-color {
+        color: rgba(255, 255, 255, .7) !important;
+        letter-spacing: .1rem;
+    }
+    
+    .menu-color:hover {
+        color: rgba(255, 255, 255, 1) !important;
+    }
+
+    .bg-light .menu-color {
+        color: rgb(60, 60, 60, .8) !important;
+        letter-spacing: .1rem;
+    }
+    
+    .bg-light .menu-color:hover {
+        color: rgb(60, 60, 60, 1) !important;
+    }
+    
+    .active {
+        color: rgba(255, 255, 255, 1) !important;
+        font-weight: 400;
+    }
+    
+    .bg-light .active {
+        color: #fdc63e !important;
+        font-weight: 400;
+    }
+}
+
+.font-m {
+    font-size: 2.5rem !important;
+    line-height: 3rem;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif !important;
+}
+
+.font-l {
+    font-size: 3rem !important;
+    line-height: 3.7rem;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif !important;
+}
+
+.font-xl {
+    font-size: 4.5rem !important;
+    line-height: 5rem;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif !important;
+}
+
+.font-xxl {
+    font-size: 5rem !important;
+    line-height: 5.5rem;
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif !important;
+}
+
+.start-button {
+    transition: background-color .3s;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+    font-family: 'Lato', Helvetica, Arial, sans-serif !important;
+}
+
+.start-button:hover {
+    background-color: #fdcc52;
+    border-color: #fdcc52;
+}
+
+.mobile-img {
+    display: block !important;
+    width: 300px !important;
+    height: 750px !important;
+    background-image: url("../images/demo-screen-1.jpg"), url("../images/phone.png");
+    background-size: 90%, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center ;
+}
+
+.icon {
+    font-size: 5rem;
+    color: #ae3361;
+}
+
+.opacity {
+    left: -30%;
+    top: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 992px) {
+    .opacity {
+        left: -10%;
+        top: -40%;
+        height: auto;
+        width: 120%;
+        opacity: 0.5;
+    }
+}
+
+.border {
+    border: 1px dotted black;
+}
+
+.bg-ultradark {
+    background-color: #222222;
+    color: rgba(255, 255, 255, .2);
+    font-size: .7rem;
+    letter-spacing: .05rem;
+    font-family: 'Lato', Helvetica, Arial, sans-serif !important;
+}
+
+.bg-ultradark p {
+    color: rgba(255, 255, 255, .2);
+}
+
+.bg-ultradark a {
+    color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.bg-ultradark a:hover {
+    color: #fdcc52;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+    padding: 2rem 0;
+}
+
+.navbar {
+    padding: 2rem 0;
+}
+
+@media screen and (min-width: 992px) {
+    .bg-light {
+        background-color: #ffffff !important;
+        padding: 1rem 0;
+    } 
+
+    .navbar {
+        padding: 1rem 0;
+    }
+}
+
+.bg-lightblue {
+    background-color: rgb(29, 161, 242, .9);
+}
+
+.bg-lightblue:hover {
+    background-color: rgb(29, 161, 242, 1);
+}
+
+.bg-blue {
+    background-color: rgb(59, 89, 152, .9);
+}
+
+.bg-blue:hover {
+    background-color: rgb(59, 89, 152, 1);
+}
+
+.bg-red {
+    background-color: rgb(221, 75, 57, .9);
+}
+
+.bg-red:hover {
+    background-color: rgb(221, 75, 57, 1);
+}
+
+.bg-yellow {
+    background-color: #fdc63e;
+}
+
+.circle-button {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s;
+}
