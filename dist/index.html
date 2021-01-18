@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSS Sitebuild</title>
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.1-web/css/brands.min.css">
+    <link rel="stylesheet" href="./assets/css/simplelineicons.github.io-master/css/simple-line-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -16,31 +19,48 @@
                 <a class="nav__link" href="">Features</a>
                 <a class="nav__link" href="">Contact</a>
             </div>
+            <label for="menu" class="hamburger__menu--label">
+                <p>Menu</p>
+                <div class="hamburger__menu--icon">
+                    <p> </p>
+                    <p> </p>
+                    <p> </p>
+                </div>
+            </label>
+            <input type="checkbox" id="menu" class="hamburger__menu">
+            <div class="mobile__menu">
+                <a class="nav__link" href="">Download</a>
+                <a class="nav__link" href="">Features</a>
+                <a class="nav__link" href="">Contact</a>
+            </div>
+
         </div>
     </nav>
 
-    <section class="gradient-bg">
-        <div class="col__60 container__one">
-            <div class="text__container">
-                <h1 class="text__header">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                <button>START NOW FOR FREE!</button>
+
+    <section class="one__background">
+        <div class="one col__60">
+            <div class="one__text">
+                <h1 class="one__text--header">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+                <button class="one__text--button">START NOW FOR FREE!</button>
             </div>
-            <div class="image__container">
-                <div class="mobile__img"></div>
+            <div class="one__image">
+                <div class="one__image--mobile"></div>
             </div>
         </div>
     </section>
 
-    <section class="yellow__background">
-        <div class="col__50 container__two">
-            <div class="text__container">
-                <h1 class="text__header">Discover what all the buzz is about!</h1>
+
+    <section class="two__background">
+        <div class="two col__50">
+            <div class="two__text">
+                <h1 class="two__text--header">Discover what all the buzz is about!</h1>
                 <p>Our app is available on any mobile device! Download now to get started!</p>
                 <div class="d-flex mt-5">
-                    <a href="https://play.google.com/store" target="_blank" class="w-30 mx">
+                    <a href="https://play.google.com/store" target="_blank" class="w-30 margin">
                         <img src="./assets/images/google-play-badge.svg" alt="Visit Google Play" class="w-100">
                     </a>
-                    <a href="https://www.apple.com/hu/ios/app-store/" target="_blank" class="w-30 mx">
+                    <a href="https://www.apple.com/hu/ios/app-store/" target="_blank" class="w-30 margin">
                         <img src="./assets/images/app-store-badge.svg" alt="Visit App Store" class="w-100">
                     </a>
                 </div>
@@ -48,37 +68,92 @@
         </div>
     </section>
 
-    <section class="container__three border">
-        <div class="col__60">
-            <div class="text__head">
-                <h1 class="text__header">Unlimited Features, Unlimited Fun</h1>
-                <p>Check out what you can do with this app theme!</p>
+
+    <section class="three_background">
+        <div class="three">
+            <div class="col__60">
+                <div class="three__header">
+                    <h1>Unlimited Features, Unlimited Fun</h1>
+                    <p>Check out what you can do with this app theme!</p>
+                </div>
             </div>
-        </div>
-        <div class="col__60 d-flex border">
-            <div class="image__container">
-                <div class="mobile__img"></div>
-            </div>
-            <div class="text__container">
-                <h1 class="text__header">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                <button>START NOW FOR FREE!</button>
+            <div class="col__60 d-flex">
+                <div class="three__image">
+                    <div class="three__image--mobile"></div>
+                </div>
+                <div class="three__text">
+                    <div class="three__text--card">                            
+                        <i class="icon icon-screen-smartphone"></i>
+                        <h2>Device Mockups</h2>
+                        <p>Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                    </div>
+
+                    <div class="three__text--card">
+                        <i class="icon icon-camera"></i>
+                        <h2>Flexible Use</h2>
+                        Put an image, video, animation, or anything else in the screen!
+                    </div>
+
+                    <div class="three__text--card">
+                        <i class="icon icon-present"></i>
+                        <h2>Free to Use</h2>
+                        As always, this theme is free to download and use for any purpose!
+                    </div>
+
+                    <div class="three__text--card">
+                        <i class="icon icon-lock-open"></i>
+                        <h2>Open Source</h2>
+                        Since this theme is MIT licensed, you can use it commercially!
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="container__four border">
-        <div class="image__container"></div>
-        <div class="col__60 d-flex border pos-rel h-100">
-            <div class="text__container ">
-                <h1 class="text__header">
-                    Stop waiting.<br />
-                    Start building.
-                </h1>
-                <button>LET'S GET STARTED!</button>
+    <section class="four__background">
+        <div class="four__background--image"></div>
+        <div class="four">
+            <div class="col__60">
+                <div class="four__text">
+                    <h1>Stop waiting.<br />
+                        Start building.</h1>
+                    <button class="four__text--button">LET'S GET STARTED!</button>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="five__background">
+        <div class="five">
+            <div class="col__60">
+                <div class="five__text">
+                    <h1>We <span style="color: red;">&#10084;</span> new friends!</h1>
+                    <div class="d-flex row">
+                        <a href="http://twitter.com" target="_blank" class="five__text--button bg-lightblue">
+                            <i class="fab fa-twitter text-white"></i>
+                            <p>twitter</p>
+                        </a>
+                        <a href="http://facebook.com" target="_blank" class="five__text--button bg-blue">
+                            <i class="fab fa-facebook-f text-white"></i>
+                            <p>facebook</p>
+                        </a>
+                        <a href="http://google.com" target="_blank" class="five__text--button bg-red">
+                            <i class="fab fa-google-plus-g text-white"></i>
+                            <p>google plus</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Your Website 2018. All Rights Reserved.</p>
+        <a class="" data-toggle="modal" data-target="#privacyModal">Privacy</a>
+        <a class="" data-toggle="modal" data-target="#termsModal">Terms</a>
+        <a class="" data-toggle="modal" data-target="#faqModal">FAQ</a>
+    </footer>
     
     <script src="./assets/js/main.js"></script>
     

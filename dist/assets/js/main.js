@@ -7,12 +7,15 @@ let offset = navBar.offsetHeight;
 
 
 window.onscroll = function() {
-    scroll_start = document.documentElement.scrollTop;
-    if (scroll_start > offset) {
-        navBar.classList.remove('nav');
-        navBar.classList.add('nav__scrolled');
-    } else {
-        navBar.classList.add('nav');
-        navBar.classList.remove('nav__scrolled');
+    let windowWidth = window.innerWidth;
+    if (windowWidth >= 992) {
+        scroll_start = document.documentElement.scrollTop;
+        if (scroll_start > offset) {
+            navBar.classList.remove('nav');
+            navBar.classList.add('nav__scrolled');
+        } else {
+            navBar.classList.add('nav');
+            navBar.classList.remove('nav__scrolled');
+        }
     }
 }
